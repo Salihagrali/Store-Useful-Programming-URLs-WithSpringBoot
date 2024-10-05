@@ -8,6 +8,6 @@ public class URLController {
 
     @GetMapping("/trying")
     public String trying() {
-        return "random";
+        return "login";
     }
 }
