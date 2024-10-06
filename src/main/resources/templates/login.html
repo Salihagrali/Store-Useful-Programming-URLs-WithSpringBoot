@@ -7,31 +7,42 @@
 
 </head>
 <body style="background-color:white;">
-<div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Dropdown</button>
-    <div id="myDropdown" class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
-</div>
-<script>
-    function myFunction(){
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
 
-    window.onclick = function (event){
-        if(!event.target.matches('.dropbtn')){
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for(i = 0; i < dropdowns.length;i++){
-                var openDropdown = dropdowns[i];
-                if(openDropdown.classList.contains('show')){
-                    openDropdown.classList.remove('show');
+    <nav class="navbar">
+        <ul class="left-side">
+            <li><a href="">Home</a></li>
+            <li><button class="dropbtn" onclick="myFunction()">Programming Languages</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Java</a>
+                    <a href="#about">Javascript</a>
+                    <a href="#contact">Spring Boot</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="right-side">
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+    <div class="dropdown">
+
+    </div>
+    <script>
+        function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event){
+            if(!event.target.matches('.dropbtn')){
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for(i = 0; i < dropdowns.length;i++){
+                    var openDropdown = dropdowns[i];
+                    if(openDropdown.classList.contains('show')){
+                        openDropdown.classList.remove('show');
+                    }
                 }
             }
         }
-    }
-</script>
+    </script>
 </body>
 </html>
