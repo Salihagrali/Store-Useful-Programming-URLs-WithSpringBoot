@@ -1,4 +1,4 @@
-.dropBtn{
+.dropbtn{
     background-color: #3498DB;
     color: white;
     padding: 16px;
@@ -6,9 +6,12 @@
     border: none;
     cursor: pointer;
 }
+h2{
+    color: red;
+}
 
 /* Dropdown button on hover & focus */
-.dropBtn:hover, .dropBtn:focus{
+.dropbtn:hover, .dropbtn:focus{
     background-color:  #2980B9;
 }
 
