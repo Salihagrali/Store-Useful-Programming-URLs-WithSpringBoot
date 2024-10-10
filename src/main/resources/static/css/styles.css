@@ -8,8 +8,8 @@ body{
 }
 
 .navbar{
-    background-color: rgb(46, 48, 50);
-    border: 1px solid rgb(46, 48, 50);
+    background-color: rgb(24, 28, 20);
+    border: 1px solid rgb(24, 28, 20);
     display:flex;
     justify-content: space-between;
 }
@@ -27,7 +27,7 @@ body{
     width: 100%;
     height: 100%;
     font-size:20px;
-    color: white;
+    color: #8f8585;
     padding : 14px 15px;
 }
 
@@ -35,10 +35,47 @@ body{
     background-color: hsl(0,0%,10%);
 }
 
+/* side bar on left*/
+
+aside{
+    border: 3px solid rgb(60, 61, 55);
+border-top-right-radius: 3%;
+    width: 25%;
+    height: 100%;
+    padding-left: 0.5rem;
+    float: left;
+    position: fixed;
+    overflow-y: auto;
+    background: rgb(60, 61, 55);
+}
+
+.mainList > li{
+    color: rgb(138, 169, 128);
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-bottom: 5px dotted grey;
+}
+aside > ul > li ul{
+    padding: 0.8em;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+.mainList a{
+    color: rgb(236, 223, 204);
+    text-decoration: none;
+}
+.mainList a:hover{
+    color: rgb(227, 209, 174);
+    text-decoration: none;
+}
+
+
 .dropbtn{
     font-family: "Times New Roman";
-    background-color: rgb(46, 48, 50);
-    color: white;
+    background-color: rgb(24, 28, 20);
+    color: #8f8585;
     padding: 15px;
     font-size: 20px;
     border: none;
@@ -60,7 +97,7 @@ body{
 .dropdown-content{
     display:none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #8f8585;
     min-width: 16px;
     box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
     z-index: 1;
@@ -69,7 +106,7 @@ body{
 .dropdown-content a {
     text-align: left;
     background-color: rgb(46, 48, 50);
-    color: white;
+    color: #8f8585;
     padding: 12px 15px;
     text-decoration: none;
     display: block;
