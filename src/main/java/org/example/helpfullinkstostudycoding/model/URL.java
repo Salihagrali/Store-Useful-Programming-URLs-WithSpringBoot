@@ -1,5 +1,6 @@
 package org.example.helpfullinkstostudycoding.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +10,8 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -26,6 +29,12 @@ public class URL {
     private LocalDateTime createdAt;
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    @JsonBackReference
+    @ManyToOne
+    @JoinColumn(name = "language_id" , nullable = false)
+    private Language language;
+    //UserEntity createdBy
 
 
 }
