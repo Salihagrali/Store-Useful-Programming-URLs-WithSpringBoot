@@ -32,7 +32,7 @@ public class URL {
 
     @JsonBackReference
     @ManyToOne
-    @JoinColumn(name = "language_id" , nullable = false)
+    @JoinColumn(name = "language_id")
     private Language language;
     //UserEntity createdBy
 
